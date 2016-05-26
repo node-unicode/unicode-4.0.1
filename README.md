@@ -19,8 +19,8 @@ The Unicode data modules ship with pre-compiled regular expressions for categori
 ```js
 const regenerate = require('regenerate');
 const set = regenerate()
-	.add(require('unicode-6.3.0/script-extensions/Arabic/code-points')) // or `…/symbols`, doesn’t matter
-	.add(require('unicode-6.3.0/script-extensions/Greek/code-points')); // or `…/symbols`, doesn’t matter
+  .add(require('unicode-6.3.0/script-extensions/Arabic/code-points')) // or `…/symbols`, doesn’t matter
+  .add(require('unicode-6.3.0/script-extensions/Greek/code-points')); // or `…/symbols`, doesn’t matter
 console.log(set.toString());
 // Then you might want to use a template like this to write the result to a file, along with any regex flags you might need:
 // const regex = /<%= set.toString() %>/gim;
@@ -747,13 +747,13 @@ require('unicode-4.0.1/blocks/Arabic/code-points');
 require('unicode-4.0.1/blocks/Arabic/symbols');
 require('unicode-4.0.1/blocks/Arabic/regex');
 
-require('unicode-4.0.1/blocks/Arabic_Presentation_Forms-A/code-points');
-require('unicode-4.0.1/blocks/Arabic_Presentation_Forms-A/symbols');
-require('unicode-4.0.1/blocks/Arabic_Presentation_Forms-A/regex');
+require('unicode-4.0.1/blocks/Arabic_Presentation_Forms_A/code-points');
+require('unicode-4.0.1/blocks/Arabic_Presentation_Forms_A/symbols');
+require('unicode-4.0.1/blocks/Arabic_Presentation_Forms_A/regex');
 
-require('unicode-4.0.1/blocks/Arabic_Presentation_Forms-B/code-points');
-require('unicode-4.0.1/blocks/Arabic_Presentation_Forms-B/symbols');
-require('unicode-4.0.1/blocks/Arabic_Presentation_Forms-B/regex');
+require('unicode-4.0.1/blocks/Arabic_Presentation_Forms_B/code-points');
+require('unicode-4.0.1/blocks/Arabic_Presentation_Forms_B/symbols');
+require('unicode-4.0.1/blocks/Arabic_Presentation_Forms_B/regex');
 
 require('unicode-4.0.1/blocks/Armenian/code-points');
 require('unicode-4.0.1/blocks/Armenian/symbols');
@@ -819,9 +819,9 @@ require('unicode-4.0.1/blocks/CJK_Radicals_Supplement/code-points');
 require('unicode-4.0.1/blocks/CJK_Radicals_Supplement/symbols');
 require('unicode-4.0.1/blocks/CJK_Radicals_Supplement/regex');
 
-require('unicode-4.0.1/blocks/CJK_Symbols_and_Punctuation/code-points');
-require('unicode-4.0.1/blocks/CJK_Symbols_and_Punctuation/symbols');
-require('unicode-4.0.1/blocks/CJK_Symbols_and_Punctuation/regex');
+require('unicode-4.0.1/blocks/CJK_Symbols_And_Punctuation/code-points');
+require('unicode-4.0.1/blocks/CJK_Symbols_And_Punctuation/symbols');
+require('unicode-4.0.1/blocks/CJK_Symbols_And_Punctuation/regex');
 
 require('unicode-4.0.1/blocks/CJK_Unified_Ideographs/code-points');
 require('unicode-4.0.1/blocks/CJK_Unified_Ideographs/symbols');
@@ -843,9 +843,9 @@ require('unicode-4.0.1/blocks/Combining_Diacritical_Marks/code-points');
 require('unicode-4.0.1/blocks/Combining_Diacritical_Marks/symbols');
 require('unicode-4.0.1/blocks/Combining_Diacritical_Marks/regex');
 
-require('unicode-4.0.1/blocks/Combining_Diacritical_Marks_for_Symbols/code-points');
-require('unicode-4.0.1/blocks/Combining_Diacritical_Marks_for_Symbols/symbols');
-require('unicode-4.0.1/blocks/Combining_Diacritical_Marks_for_Symbols/regex');
+require('unicode-4.0.1/blocks/Combining_Diacritical_Marks_For_Symbols/code-points');
+require('unicode-4.0.1/blocks/Combining_Diacritical_Marks_For_Symbols/symbols');
+require('unicode-4.0.1/blocks/Combining_Diacritical_Marks_For_Symbols/regex');
 
 require('unicode-4.0.1/blocks/Combining_Half_Marks/code-points');
 require('unicode-4.0.1/blocks/Combining_Half_Marks/symbols');
@@ -887,9 +887,9 @@ require('unicode-4.0.1/blocks/Enclosed_Alphanumerics/code-points');
 require('unicode-4.0.1/blocks/Enclosed_Alphanumerics/symbols');
 require('unicode-4.0.1/blocks/Enclosed_Alphanumerics/regex');
 
-require('unicode-4.0.1/blocks/Enclosed_CJK_Letters_and_Months/code-points');
-require('unicode-4.0.1/blocks/Enclosed_CJK_Letters_and_Months/symbols');
-require('unicode-4.0.1/blocks/Enclosed_CJK_Letters_and_Months/regex');
+require('unicode-4.0.1/blocks/Enclosed_CJK_Letters_And_Months/code-points');
+require('unicode-4.0.1/blocks/Enclosed_CJK_Letters_And_Months/symbols');
+require('unicode-4.0.1/blocks/Enclosed_CJK_Letters_And_Months/regex');
 
 require('unicode-4.0.1/blocks/Ethiopic/code-points');
 require('unicode-4.0.1/blocks/Ethiopic/symbols');
@@ -911,13 +911,13 @@ require('unicode-4.0.1/blocks/Gothic/code-points');
 require('unicode-4.0.1/blocks/Gothic/symbols');
 require('unicode-4.0.1/blocks/Gothic/regex');
 
+require('unicode-4.0.1/blocks/Greek_And_Coptic/code-points');
+require('unicode-4.0.1/blocks/Greek_And_Coptic/symbols');
+require('unicode-4.0.1/blocks/Greek_And_Coptic/regex');
+
 require('unicode-4.0.1/blocks/Greek_Extended/code-points');
 require('unicode-4.0.1/blocks/Greek_Extended/symbols');
 require('unicode-4.0.1/blocks/Greek_Extended/regex');
-
-require('unicode-4.0.1/blocks/Greek_and_Coptic/code-points');
-require('unicode-4.0.1/blocks/Greek_and_Coptic/symbols');
-require('unicode-4.0.1/blocks/Greek_and_Coptic/regex');
 
 require('unicode-4.0.1/blocks/Gujarati/code-points');
 require('unicode-4.0.1/blocks/Gujarati/symbols');
@@ -927,9 +927,9 @@ require('unicode-4.0.1/blocks/Gurmukhi/code-points');
 require('unicode-4.0.1/blocks/Gurmukhi/symbols');
 require('unicode-4.0.1/blocks/Gurmukhi/regex');
 
-require('unicode-4.0.1/blocks/Halfwidth_and_Fullwidth_Forms/code-points');
-require('unicode-4.0.1/blocks/Halfwidth_and_Fullwidth_Forms/symbols');
-require('unicode-4.0.1/blocks/Halfwidth_and_Fullwidth_Forms/regex');
+require('unicode-4.0.1/blocks/Halfwidth_And_Fullwidth_Forms/code-points');
+require('unicode-4.0.1/blocks/Halfwidth_And_Fullwidth_Forms/symbols');
+require('unicode-4.0.1/blocks/Halfwidth_And_Fullwidth_Forms/regex');
 
 require('unicode-4.0.1/blocks/Hangul_Compatibility_Jamo/code-points');
 require('unicode-4.0.1/blocks/Hangul_Compatibility_Jamo/symbols');
@@ -1003,21 +1003,21 @@ require('unicode-4.0.1/blocks/Lao/code-points');
 require('unicode-4.0.1/blocks/Lao/symbols');
 require('unicode-4.0.1/blocks/Lao/regex');
 
-require('unicode-4.0.1/blocks/Latin-1_Supplement/code-points');
-require('unicode-4.0.1/blocks/Latin-1_Supplement/symbols');
-require('unicode-4.0.1/blocks/Latin-1_Supplement/regex');
+require('unicode-4.0.1/blocks/Latin_1_Supplement/code-points');
+require('unicode-4.0.1/blocks/Latin_1_Supplement/symbols');
+require('unicode-4.0.1/blocks/Latin_1_Supplement/regex');
 
-require('unicode-4.0.1/blocks/Latin_Extended-A/code-points');
-require('unicode-4.0.1/blocks/Latin_Extended-A/symbols');
-require('unicode-4.0.1/blocks/Latin_Extended-A/regex');
-
-require('unicode-4.0.1/blocks/Latin_Extended-B/code-points');
-require('unicode-4.0.1/blocks/Latin_Extended-B/symbols');
-require('unicode-4.0.1/blocks/Latin_Extended-B/regex');
+require('unicode-4.0.1/blocks/Latin_Extended_A/code-points');
+require('unicode-4.0.1/blocks/Latin_Extended_A/symbols');
+require('unicode-4.0.1/blocks/Latin_Extended_A/regex');
 
 require('unicode-4.0.1/blocks/Latin_Extended_Additional/code-points');
 require('unicode-4.0.1/blocks/Latin_Extended_Additional/symbols');
 require('unicode-4.0.1/blocks/Latin_Extended_Additional/regex');
+
+require('unicode-4.0.1/blocks/Latin_Extended_B/code-points');
+require('unicode-4.0.1/blocks/Latin_Extended_B/symbols');
+require('unicode-4.0.1/blocks/Latin_Extended_B/regex');
 
 require('unicode-4.0.1/blocks/Letterlike_Symbols/code-points');
 require('unicode-4.0.1/blocks/Letterlike_Symbols/symbols');
@@ -1051,21 +1051,21 @@ require('unicode-4.0.1/blocks/Mathematical_Operators/code-points');
 require('unicode-4.0.1/blocks/Mathematical_Operators/symbols');
 require('unicode-4.0.1/blocks/Mathematical_Operators/regex');
 
-require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols-A/code-points');
-require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols-A/symbols');
-require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols-A/regex');
+require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols_A/code-points');
+require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols_A/symbols');
+require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols_A/regex');
 
-require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols-B/code-points');
-require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols-B/symbols');
-require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols-B/regex');
+require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols_B/code-points');
+require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols_B/symbols');
+require('unicode-4.0.1/blocks/Miscellaneous_Mathematical_Symbols_B/regex');
 
 require('unicode-4.0.1/blocks/Miscellaneous_Symbols/code-points');
 require('unicode-4.0.1/blocks/Miscellaneous_Symbols/symbols');
 require('unicode-4.0.1/blocks/Miscellaneous_Symbols/regex');
 
-require('unicode-4.0.1/blocks/Miscellaneous_Symbols_and_Arrows/code-points');
-require('unicode-4.0.1/blocks/Miscellaneous_Symbols_and_Arrows/symbols');
-require('unicode-4.0.1/blocks/Miscellaneous_Symbols_and_Arrows/regex');
+require('unicode-4.0.1/blocks/Miscellaneous_Symbols_And_Arrows/code-points');
+require('unicode-4.0.1/blocks/Miscellaneous_Symbols_And_Arrows/symbols');
+require('unicode-4.0.1/blocks/Miscellaneous_Symbols_And_Arrows/regex');
 
 require('unicode-4.0.1/blocks/Miscellaneous_Technical/code-points');
 require('unicode-4.0.1/blocks/Miscellaneous_Technical/symbols');
@@ -1139,29 +1139,29 @@ require('unicode-4.0.1/blocks/Specials/code-points');
 require('unicode-4.0.1/blocks/Specials/symbols');
 require('unicode-4.0.1/blocks/Specials/regex');
 
-require('unicode-4.0.1/blocks/Superscripts_and_Subscripts/code-points');
-require('unicode-4.0.1/blocks/Superscripts_and_Subscripts/symbols');
-require('unicode-4.0.1/blocks/Superscripts_and_Subscripts/regex');
+require('unicode-4.0.1/blocks/Superscripts_And_Subscripts/code-points');
+require('unicode-4.0.1/blocks/Superscripts_And_Subscripts/symbols');
+require('unicode-4.0.1/blocks/Superscripts_And_Subscripts/regex');
 
-require('unicode-4.0.1/blocks/Supplemental_Arrows-A/code-points');
-require('unicode-4.0.1/blocks/Supplemental_Arrows-A/symbols');
-require('unicode-4.0.1/blocks/Supplemental_Arrows-A/regex');
+require('unicode-4.0.1/blocks/Supplemental_Arrows_A/code-points');
+require('unicode-4.0.1/blocks/Supplemental_Arrows_A/symbols');
+require('unicode-4.0.1/blocks/Supplemental_Arrows_A/regex');
 
-require('unicode-4.0.1/blocks/Supplemental_Arrows-B/code-points');
-require('unicode-4.0.1/blocks/Supplemental_Arrows-B/symbols');
-require('unicode-4.0.1/blocks/Supplemental_Arrows-B/regex');
+require('unicode-4.0.1/blocks/Supplemental_Arrows_B/code-points');
+require('unicode-4.0.1/blocks/Supplemental_Arrows_B/symbols');
+require('unicode-4.0.1/blocks/Supplemental_Arrows_B/regex');
 
 require('unicode-4.0.1/blocks/Supplemental_Mathematical_Operators/code-points');
 require('unicode-4.0.1/blocks/Supplemental_Mathematical_Operators/symbols');
 require('unicode-4.0.1/blocks/Supplemental_Mathematical_Operators/regex');
 
-require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area-A/code-points');
-require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area-A/symbols');
-require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area-A/regex');
+require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area_A/code-points');
+require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area_A/symbols');
+require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area_A/regex');
 
-require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area-B/code-points');
-require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area-B/symbols');
-require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area-B/regex');
+require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area_B/code-points');
+require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area_B/symbols');
+require('unicode-4.0.1/blocks/Supplementary_Private_Use_Area_B/regex');
 
 require('unicode-4.0.1/blocks/Syriac/code-points');
 require('unicode-4.0.1/blocks/Syriac/symbols');
