@@ -1,1 +1,1 @@
-module.exports=['\u3031','\u3032','\u3033','\u3034','\u3035','\u309B','\u309C','\uFF70','\uFF9E','\uFF9F']
+module.exports=require('./ranges.js').flatMap(r=>Array.from(r.values()))
