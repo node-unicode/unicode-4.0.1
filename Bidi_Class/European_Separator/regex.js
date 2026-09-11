@@ -1,1 +1,0 @@
-module.exports=/[\+\x2D\uFF0F]/
