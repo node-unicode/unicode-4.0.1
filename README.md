@@ -50,6 +50,10 @@ import bidiClassMap from '@unicode/unicode-4.0.1/Bidi_Class/index.mjs';
 // Get the directionality of a given code point:
 const directionality = bidiClassMap.get(0x41);
 
+// What glyph is the mirror image of `«` (U+00AB)?
+import bidiMirroringGlyph from '@unicode/unicode-4.0.1/Bidi_Mirroring_Glyph/index.mjs';
+const mirrored = bidiMirroringGlyph.get(0xAB);
+
 // …you get the idea.
 ```
 
@@ -247,6 +251,10 @@ import Bidi_MirroredCodePoints from '@unicode/unicode-4.0.1/Binary_Property/Bidi
 import Bidi_MirroredSymbols from '@unicode/unicode-4.0.1/Binary_Property/Bidi_Mirrored/symbols.mjs';
 import Bidi_MirroredRegex from '@unicode/unicode-4.0.1/Binary_Property/Bidi_Mirrored/regex.mjs';
 
+import Composition_ExclusionCodePoints from '@unicode/unicode-4.0.1/Binary_Property/Composition_Exclusion/code-points.mjs';
+import Composition_ExclusionSymbols from '@unicode/unicode-4.0.1/Binary_Property/Composition_Exclusion/symbols.mjs';
+import Composition_ExclusionRegex from '@unicode/unicode-4.0.1/Binary_Property/Composition_Exclusion/regex.mjs';
+
 import DashCodePoints from '@unicode/unicode-4.0.1/Binary_Property/Dash/code-points.mjs';
 import DashSymbols from '@unicode/unicode-4.0.1/Binary_Property/Dash/symbols.mjs';
 import DashRegex from '@unicode/unicode-4.0.1/Binary_Property/Dash/regex.mjs';
@@ -383,9 +391,9 @@ import RadicalCodePoints from '@unicode/unicode-4.0.1/Binary_Property/Radical/co
 import RadicalSymbols from '@unicode/unicode-4.0.1/Binary_Property/Radical/symbols.mjs';
 import RadicalRegex from '@unicode/unicode-4.0.1/Binary_Property/Radical/regex.mjs';
 
-import STermCodePoints from '@unicode/unicode-4.0.1/Binary_Property/STerm/code-points.mjs';
-import STermSymbols from '@unicode/unicode-4.0.1/Binary_Property/STerm/symbols.mjs';
-import STermRegex from '@unicode/unicode-4.0.1/Binary_Property/STerm/regex.mjs';
+import Sentence_TerminalCodePoints from '@unicode/unicode-4.0.1/Binary_Property/Sentence_Terminal/code-points.mjs';
+import Sentence_TerminalSymbols from '@unicode/unicode-4.0.1/Binary_Property/Sentence_Terminal/symbols.mjs';
+import Sentence_TerminalRegex from '@unicode/unicode-4.0.1/Binary_Property/Sentence_Terminal/regex.mjs';
 
 import Soft_DottedCodePoints from '@unicode/unicode-4.0.1/Binary_Property/Soft_Dotted/code-points.mjs';
 import Soft_DottedSymbols from '@unicode/unicode-4.0.1/Binary_Property/Soft_Dotted/symbols.mjs';
@@ -712,10 +720,6 @@ import TibetanRegex from '@unicode/unicode-4.0.1/Script/Tibetan/regex.mjs';
 import UgariticCodePoints from '@unicode/unicode-4.0.1/Script/Ugaritic/code-points.mjs';
 import UgariticSymbols from '@unicode/unicode-4.0.1/Script/Ugaritic/symbols.mjs';
 import UgariticRegex from '@unicode/unicode-4.0.1/Script/Ugaritic/regex.mjs';
-
-import UnknownCodePoints from '@unicode/unicode-4.0.1/Script/Unknown/code-points.mjs';
-import UnknownSymbols from '@unicode/unicode-4.0.1/Script/Unknown/symbols.mjs';
-import UnknownRegex from '@unicode/unicode-4.0.1/Script/Unknown/regex.mjs';
 
 import YiCodePoints from '@unicode/unicode-4.0.1/Script/Yi/code-points.mjs';
 import YiSymbols from '@unicode/unicode-4.0.1/Script/Yi/symbols.mjs';
@@ -1085,6 +1089,10 @@ import MyanmarCodePoints from '@unicode/unicode-4.0.1/Block/Myanmar/code-points.
 import MyanmarSymbols from '@unicode/unicode-4.0.1/Block/Myanmar/symbols.mjs';
 import MyanmarRegex from '@unicode/unicode-4.0.1/Block/Myanmar/regex.mjs';
 
+import No_BlockCodePoints from '@unicode/unicode-4.0.1/Block/No_Block/code-points.mjs';
+import No_BlockSymbols from '@unicode/unicode-4.0.1/Block/No_Block/symbols.mjs';
+import No_BlockRegex from '@unicode/unicode-4.0.1/Block/No_Block/regex.mjs';
+
 import Number_FormsCodePoints from '@unicode/unicode-4.0.1/Block/Number_Forms/code-points.mjs';
 import Number_FormsSymbols from '@unicode/unicode-4.0.1/Block/Number_Forms/symbols.mjs';
 import Number_FormsRegex from '@unicode/unicode-4.0.1/Block/Number_Forms/regex.mjs';
@@ -1237,6 +1245,10 @@ import Yijing_Hexagram_SymbolsCodePoints from '@unicode/unicode-4.0.1/Block/Yiji
 import Yijing_Hexagram_SymbolsSymbols from '@unicode/unicode-4.0.1/Block/Yijing_Hexagram_Symbols/symbols.mjs';
 import Yijing_Hexagram_SymbolsRegex from '@unicode/unicode-4.0.1/Block/Yijing_Hexagram_Symbols/regex.mjs';
 
+// `Bidi_Mirroring_Glyph`:
+
+import Bidi_Mirroring_Glyph from '@unicode/unicode-4.0.1/Bidi_Mirroring_Glyph/index.mjs'; // Lookup map.
+
 // `Line_Break`:
 
 import AlphabeticCodePoints from '@unicode/unicode-4.0.1/Line_Break/Alphabetic/code-points.mjs';
@@ -1380,6 +1392,10 @@ import Non_JoiningRegex from '@unicode/unicode-4.0.1/Joining_Type/Non_Joining/re
 import Right_JoiningCodePoints from '@unicode/unicode-4.0.1/Joining_Type/Right_Joining/code-points.mjs';
 import Right_JoiningSymbols from '@unicode/unicode-4.0.1/Joining_Type/Right_Joining/symbols.mjs';
 import Right_JoiningRegex from '@unicode/unicode-4.0.1/Joining_Type/Right_Joining/regex.mjs';
+
+import TransparentCodePoints from '@unicode/unicode-4.0.1/Joining_Type/Transparent/code-points.mjs';
+import TransparentSymbols from '@unicode/unicode-4.0.1/Joining_Type/Transparent/symbols.mjs';
+import TransparentRegex from '@unicode/unicode-4.0.1/Joining_Type/Transparent/regex.mjs';
 
 // `Simple_Case_Mapping`:
 
